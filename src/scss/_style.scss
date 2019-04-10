@@ -20,7 +20,6 @@ body {
 .divider {
     font-size: 16px;
     line-height: 41px;
-    color: #7e8287;
 }
 
 .cusBtn {
@@ -120,8 +119,7 @@ header {
         h2 {}
 
         p {
-            font-size: 16px;
-            line-height: 41px;
+
             color: #7e8287;
 
             span {
@@ -145,7 +143,6 @@ header {
         p {
             font-size: 16px;
             line-height: 30px;
-            color: #7e8287;
         }
 
     }
@@ -159,7 +156,6 @@ header {
 
     .services-left {
         padding: 80px 40px;
-        background-color: #f0f0e8;
 
         .services-header {
             h1 {}
@@ -171,8 +167,6 @@ header {
 
             p {
                 font-size: 16px;
-                line-height: 41px;
-                color: #7e8287;
             }
         }
 
@@ -187,9 +181,7 @@ header {
             }
 
             p {
-                font-size: 16px;
                 line-height: 25px;
-                color: #7e8287;
             }
         }
 
@@ -207,12 +199,116 @@ header {
 //<!-- services end -->
 
 //<!-- work start -->
-.work {}
+.work {
+    padding-top: 100px;
+    padding-bottom: 50px;
+
+    .work-header {
+        text-align: center;
+
+        p {
+            margin-bottom: 80px;
+        }
+
+    }
+
+    .portfolio {
+
+        &:hover {
+            .overlay {
+                height: 90%;
+                opacity: 1;
+            }
+        }
+
+
+        position: relative;
+
+        img {
+            width: 100%;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #02918cb4;
+            height: 0%;
+            opacity: 0;
+            width: 90%;
+            text-align: center;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            flex-direction: column;
+            transition: all linear .3s;
+
+            h4 {
+                font-size: 16px;
+                line-height: 23px;
+                font-weight: 800;
+                margin-bottom: 8px;
+            }
+
+            p {
+                font-size: 13px;
+                line-height: 21px;
+            }
+
+        }
+    }
+}
 
 //<!-- work end -->
 
 //<!-- contact start -->
-.contact {}
+.contact {
+    padding-top: 50px;
+    text-align: center;
+
+    .contact-header {
+        p {
+            margin-bottom: 70px;
+        }
+    }
+
+    .msgbox {
+        padding-top: 70px;
+        padding-bottom: 80px;
+        background-color: #0b0b0b;
+
+        form {
+            input {
+                background: transparent;
+                border: none;
+                border-bottom: 1px solid #898989;
+                width: 100%;
+                margin-bottom: 40px;
+                padding: 10px 0;
+                font-size: 16px;
+                color: #7e8287;
+
+                &::placeholder {
+                    text-align: center;
+                }
+            }
+
+            textarea{
+                @extend input;
+                border-top: 1px solid #898989;
+                height: 100px;
+                resize: none;
+                margin-top: 20px;
+            }
+
+            button{
+                padding: 19px 60px;
+            }
+        }
+    }
+}
 
 //<!-- contact end -->
 
