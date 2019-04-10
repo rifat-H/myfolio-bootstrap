@@ -295,7 +295,7 @@ header {
                 }
             }
 
-            textarea{
+            textarea {
                 @extend input;
                 border-top: 1px solid #898989;
                 height: 100px;
@@ -303,7 +303,7 @@ header {
                 margin-top: 20px;
             }
 
-            button{
+            button {
                 padding: 19px 60px;
             }
         }
@@ -313,6 +313,14 @@ header {
 //<!-- contact end -->
 
 // footer start
-footer {}
+footer {
+    text-align: center;
+    background-color: #000000;
+    padding: 10px 0;
+
+    p {
+        font-size: 12px;
+    }
+}
 
 // footer end
