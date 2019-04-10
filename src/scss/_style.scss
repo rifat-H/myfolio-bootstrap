@@ -290,6 +290,10 @@ header {
                 font-size: 16px;
                 color: #7e8287;
 
+                &:focus{
+                    border-color: #cfc91d;
+                }
+
                 &::placeholder {
                     text-align: center;
                 }
