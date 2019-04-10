@@ -1,13 +1,30 @@
 // common css start
-body{
+body {
     font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 41px;
+    color: #7e8287;
 }
+
+.title {
+    font-size: 46px;
+    color: #02918c;
+    font-weight: 800;
+}
+
+.title2 {
+    line-height: 23px;
+    font-weight: 800;
+}
+
 // common css end
 
 // header start
-header{}
+header {}
+
 // header end
 
 // footer start
-footer{}
+footer {}
+
 // footer end
