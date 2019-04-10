@@ -20,7 +20,31 @@ body {
 // common css end
 
 // header start
-header {}
+header {
+    background-color: #02918c;
+    padding: 5px 0;
+
+    nav {
+        ul {
+            li {
+                margin-right: 50px;
+
+                a {
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    color: #ffffff;
+                    font-family: "Open Sans";
+                    font-weight: 800;
+                    transition: all linear .3s;
+
+                    &:hover{
+                        color: #cfc91d;
+                    }
+                }
+            }
+        }
+    }
+}
 
 // header end
 
