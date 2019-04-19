@@ -20,7 +20,7 @@
     <title>MyFolio Bootstrap</title>
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="80">
 
     <!-- header start -->
     <header class="sticky-top" id="header">
@@ -41,7 +41,7 @@
                         <li class="nav-item active">
                             <a class="nav-link" href="#banner">Home</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item active">
                             <a class="nav-link" href="#about">about ME</a>
                         </li>
                         <li class="nav-item">
@@ -419,7 +419,7 @@
             console.log(link);
             $('html, body').animate({
                 scrollTop: $(link).offset().top - 50
-            }, 2000);
+            }, 1500);
 
         });
     </script>
