@@ -412,16 +412,15 @@
     <script src="js/script.js"></script>
 
     <script>
-
         $('.nav-link').click(function (e) {
             e.preventDefault();
 
             let link = $(this).attr('href');
             console.log(link);
             $('html, body').animate({
-                scrollTop: $(link).offset().top -50
+                scrollTop: $(link).offset().top - 50
             }, 2000);
-            
+
         });
     </script>
 
